@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+  <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+  <title>Trapezoid Area Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      text-align: center;
+      background-color: skyblue;
+    }
+
+    h1 {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    form {
+      margin-bottom: 15px;
+    }
+
+    input[type="number"], input[type="button"] {
+      padding: 6px;
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    img {
+    display: block;
+    margin: 0 auto 15px auto; 
+    width: 350px;             
+    max-width: 100%;          
+    height: auto;             
+    }
+
+    output {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1><strong>Finding the Area of a Trapezoid</strong></h1>
+  <form>
+    <img src="https://curvebreakerstestprep.com/wp-content/uploads/2021/06/Area-of-a-Trapezoid.png" alt="Trapezoid diagram">
+    <input type="number" id="base1" placeholder="Enter base 1"><br>
+    <input type="number" id="base2" placeholder="Enter base 2"><br>
+    <input type="number" id="height" placeholder="Enter height"><br>
+    <input type="button" value="Calculate Area" py-click="trapezoid_area">
+    <input type="button" value="Reset" py-click="reset">
+  </form>
+  <div id="output"></div>
+  <py-script src="main.py"></py-script>
+</body>
+</html>
